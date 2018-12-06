@@ -15,8 +15,8 @@ $querydetail = $mysqli->query($sqldetail);
                 <div class="panel panel-green">
                   <h1 class="panel-heading panel-title">Book Data</h1>
                     <div class="panel-body">
-                      <div class="table-responsive">
-                          <table class="table table-bordered table-hover table-striped">
+                      
+                          <table class="table table-bordered table-hover table-striped" id="item">
                               <thead>
                                    <tr>
                                        <th>Book ID</th>
@@ -52,7 +52,7 @@ $querydetail = $mysqli->query($sqldetail);
                                </tbody>
                            </table>
                 <button class="btn btn-default"><a href="index.php?hal=book_add"><i class="fa fa-fw fa-plus" style="color:#000"></i>Add</a></button>
-                       </div>
+                       
                     </div>
 
                 </div>
@@ -65,3 +65,9 @@ $querydetail = $mysqli->query($sqldetail);
 
     </div>
     <!-- /#page-wrapper -->
+<script type="text/javascript">
+
+$(document).ready( function () {
+    $("#item").dataTable();
+} );
+</script>

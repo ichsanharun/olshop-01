@@ -53,7 +53,7 @@ $querydetail = $mysqli->query($sqldetail);
                                   ?>
                                </tbody>
                            </table>
-                <button class="btn btn-default"><a href="index.php?hal=admin_add"><i class="fa fa-fw fa-plus" style="color:#000"></i>Tambah</a></button>
+                <button class="btn btn-default" onclick="window.location.href='index.php?hal=admin_add'"><i class="fa fa-fw fa-plus" style="color:#000"></i>Tambah</button>
                        </div>
                     </div>
 

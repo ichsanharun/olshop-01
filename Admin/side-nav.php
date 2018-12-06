@@ -13,11 +13,11 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="text-center">
-              <!img src="img/logo.png"  alt="gambar profil" width="90%"><br>
-              <a><strong><?php echo $_SESSION['nama']; ?></strong><br>
-                <?php echo $_SESSION['hak']; ?></a>
-              </li>
+            <img src="img/logo.png"  alt="gambar profil" width="90%"><br>
+            <div class="side-nav-head">
+              <strong><?php echo $_SESSION['nama']; ?></strong><br>
+              <?php echo $_SESSION['hak']; ?>
+            </div>
                 <li>
                   <a href="index.php?hal=home"><i class="fa fa-fw fa-dashboard"></i> Home</a>
                 </li>
@@ -25,7 +25,7 @@
                   <a href="#" data-toggle="collapse" data-target="#product"><i class="fa fa-fw fa-edit"></i> Manage Product <i class="fa fa-fw fa-caret-down"></i></a>
                   <ul id="product" class="collapse">
                     <li>
-                      <a href="index.php?hal=book"><i class="fa fa-fw fa-book"></i> Manage Book</a>
+                      <a href="index.php?hal=item"><i class="fa fa-fw fa-book"></i> Manage Item</a>
                     </li>
                     <li>
                       <a href="index.php?hal=category"><i class="fa fa-fw fa-list"></i> Manage Category</a>

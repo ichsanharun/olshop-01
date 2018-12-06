@@ -20,6 +20,7 @@
               include 'navbar.php';
 ?>
 <!--//- - - - - - - - - - - - - - - - PAGES -------------------------------------------->
+<div class="konten-box">
 <?php
 //sama seperti include fungsinya dan untuk alamatnya atau urlnya index.php?p= atau mengatur untuk mengatur halaman
     if(!empty($_GET['hal'])){
@@ -41,17 +42,13 @@
       }
    		}
 
- 		?>
-
+?>
+</div>
 <!--//- - - - - - - - - - - - - - - - END OF PAGES -------------------------------------------->
     </div>
     <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

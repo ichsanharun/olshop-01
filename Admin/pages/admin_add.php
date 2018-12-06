@@ -11,6 +11,10 @@ $queryedit = $mysqli->query($sqledit);
 <div id="page-wrapper">
 
     <div class="container-fluid">
+      <h3 style="margin-top: 0 !important">
+        <span class="fa fa-plus"></span>Add Admin Data
+      </h3>
+      <hr style="height:2px;background-color: #333">
 
 
       <div class="row">

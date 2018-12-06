@@ -19,10 +19,10 @@
                       <label class="control-label col-lg-2" style="text-align:left">Category Name</label>
                       <div class="col-lg-10"><input name="nama" class="form-control col-lg-10" value=""></div>
                   </div>
-                  
+
 
                   <button type="submit" class="btn btn-default">Save</button>
-                  <button type="reset" class="btn btn-default">Cancel</button>
+                  <button type="reset" onclick="window.location.href = 'index.php?hal=category';" class="btn btn-default">Cancel</button>
 
               </form>
 
