@@ -2,7 +2,8 @@
 
 
  ?>
-
+<div class="col-lg-9 mb-6">
+  <h2 class="my-4"> Keranjang Belanja</span></h2>
 <div class="table-responsive" style="height:200px">
 <table class="table table-bordered table-hover table-striped" border="1">
     <thead>
@@ -21,33 +22,32 @@
        <?php
        if (isset($_SESSION['items'])) {$total = 0;
            foreach ($_SESSION['items'] as $key => $val){
-             $q = "SELECT * FROM buku WHERE id_buku = '$key'";
-             $queryq = $mysqli->query($q);
-             $rsq = mysqli_fetch_array ($queryq);
-             
+             $q = $db->select_where('*','item',array('id_item'=>$key));
+             $rsq = mysqli_fetch_array ($q);
+
 
              //echo "$key $val". $_SESSION['items'];
         ?>
          <tr>
            <form action="pages/aksi_checkout.php" method="post">
-           <input type="hidden" name="id_buku[]" value="<?php echo "$key"; ?>">
-           <input type="hidden" name="judul_buku[]" value="<?php echo "$rsq[judul_buku]"; ?>">
-           <input type="hidden" name="harga_buku[]" value="<?php echo "$rsq[harga_buku]"; ?>">
+           <input type="hidden" name="id_item[]" value="<?php echo "$key"; ?>">
+           <input type="hidden" name="nama_item[]" value="<?php echo "$rsq[nama_item]"; ?>">
+           <input type="hidden" name="harga_item[]" value="<?php echo "$rsq[harga_item]"; ?>">
            <input type="hidden" name="qty[]" value="<?php echo "$val"; ?>">
 
 
              <td><a href="pages/aksi_beli.php?act=del&id=<?php echo $key; ?>" class="btn btn-xs btn-danger fa fa-times" style="color:#fff"></a></td>
              <td>
-                 <?php echo "$rsq[judul_buku]"; ?>
+                 <?php echo "$rsq[nama_item]"; ?>
              </td>
              <td>
-                 <?php echo "$rsq[harga_buku]"; ?>
+                 <?php echo "$rsq[harga_item]"; ?>
              </td>
              <td>
                   <?php echo $val ?>
              </td>
              <td>
-                  <?php $sub = $val*$rsq['harga_buku']; ?>
+                  <?php $sub = $val*$rsq['harga_item']; ?>
                   <?php echo $sub;
                   ?>
                   <input type="hidden" name="sub[]" value="<?php echo "$sub"; ?>">
@@ -79,4 +79,5 @@
      </tbody>
 
  </table>
+</div>
 </div>

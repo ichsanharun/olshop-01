@@ -14,5 +14,6 @@
   <link href="css/shop-homepage.css" rel="stylesheet">
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/jquery/pagination.min.js"></script>
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
