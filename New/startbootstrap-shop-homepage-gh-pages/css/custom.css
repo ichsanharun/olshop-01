@@ -1,0 +1,83 @@
+html,body{
+	height: 100%;
+}
+
+.bd-navbar{
+	background-color: #563d7c;
+}
+
+.my-container{
+	padding: 0 ;
+}
+
+.section-class{
+	width: 100%;
+	margin: 0 0 0 0;
+	padding: 70px 0 0 0;
+	height: 100%;
+	background:  rgba(219, 219, 219, 0.75);
+}
+
+.wadah-mengetik
+{	font-size: 48px;
+	width: inherit;
+	white-space:nowrap;
+	overflow:hidden;
+	-webkit-animation: ketik 5s steps(50, end);
+	animation: ketik 5s steps(50, end);
+}
+
+@keyframes ketik{
+		from { width: 0; }
+}
+
+@-webkit-keyframes ketik{
+		from { width: 0; }
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@charset "utf-8";
+login{
+	background: #F2F2F2;
+	font-family: sans-serif;
+}
+
+
+
+.brand{
+	color: #eee;
+	font-size: 11pt;
+	float: right;
+	text-decoration: none;
+	margin: 12px;
+}
+
+.judul{
+	text-align: center;
+	color: #eee;
+	font-weight: normal;
+}
+
+.sub-judul{
+	background: linear-gradient(to right, #D4C8FD , #906EFF); /* Standard syntax */
+	background: -webkit-linear-gradient(left, #D4C8FD , #906EFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #D4C8FD , #906EFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #D4C8FD , #906EFF); /* For Firefox 3.6 to 15 */
+
+	color: #08356a;
+	vertical-align: middle !important;
+}

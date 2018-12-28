@@ -6,14 +6,52 @@
 
 body {
   padding-top: 54px;
+  background-image: url("../iamges/bg.jpg");
+	background-size: cover;
 }
 
 @media (min-width: 992px) {
   body {
+    min-height: inherit;
     padding-top: 56px;
+    background-image: url("../images/bg.jpg");
+
+  	background-size: cover;
+    color: #25201e;
   }
   footer{
     position: fixed;
     width: 100%;
   }
+}
+
+
+.container-content{
+  border: 1px solid #000;
+  border-radius: 10px;
+  background:  rgba(232, 232, 232, 0.90);
+}
+.side-nav{
+  border-right: 1px solid;
+  border-radius: 5px;
+  padding: 0;
+}
+.header-side-nav{
+  padding: 15px;
+}
+.list-group{
+  width: 100%;
+
+}
+.list-group-item {
+  background-color: transparent;
+  border: 0px solid;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.list-group-item:hover {
+  background-color: #F9F6F6;
 }
